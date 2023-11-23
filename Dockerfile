@@ -1,7 +1,7 @@
 FROM nginx:1.25.2-alpine
 
 
-RUN echo "Welcome to the OpenShift Page" >> /usr/share/nginx/html/index.html
+RUN echo "Welcome to the OpenShift Page" > /usr/share/nginx/html/index.html
 
 
 RUN chmod g+rwx /var/cache/nginx /var/run /var/log/nginx && \
